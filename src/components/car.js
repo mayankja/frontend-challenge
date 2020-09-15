@@ -13,6 +13,9 @@ export default ({ availability, brand, id, model, pricePerDay, pricePerKm }) => 
                         Availability (For KM): {availability.maxDistance} <br />
                         price/Day: {pricePerDay} <br />
                         price/Km: {pricePerKm} <br />
+                        <br />
+                        Total price (per Day): {availability.maxDuration * pricePerDay} <br />
+                        Total price (per KM): {availability.maxDistance * pricePerKm}
                     </p>
                 </div>
                 <div className="col m-0 p-0">
